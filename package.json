@@ -1,0 +1,12 @@
+{
+  "name": "No-BS-TS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@me.github.com:timvvoodman/No-BS-TS.git",
+  "author": "Tim Woodman <timothy.woodman@americastestkitchen.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
