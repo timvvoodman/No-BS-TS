@@ -7,7 +7,6 @@ printIngredient('1C', 'flour')
 printIngredient('1C', 'flour', 'sifted')
 
 // Optional Fields
-
 interface User {
   id: string;
   info?: {
@@ -15,9 +14,26 @@ interface User {
   }
 }
 
-function getUser(user: User): string {
+function getEmail(user: User): string {
   if(user.info) {
-    return user.info.email!; 
+    return user.info.email!;
   }
   return ''
 }
+
+function getEmailEz(user: User): string {
+  return user.info?.email ?? ''
+}
+
+// Optional Callbacks
+function addWithCallback(x: number, y: number, callback?: () => void) {
+  console.log([x, y]);
+  // if (callback) {
+  //   callback();
+  // } 
+
+  // OR THE SHORT WAY
+  callback?.();
+}
+
+addWithCallback(1,2)
